@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.ride_home.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.ride_home.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.ride_home.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/fragmentA"
+        android:name="com.example.ride_home.ui.home.FragmentA"
+        android:label="Create Ride"
+        tools:layout="@layout/fragment_a" />
+
+    <fragment
+        android:id="@+id/fragmentB"
+        android:name="com.example.ride_home.ui.home.FragmentB"
+        android:label="Join Ride"
+        tools:layout="@layout/fragment_b" />
+    <fragment
+        android:id="@+id/admin_requests_fragment"
+        android:name="com.example.ride_home.ui.slideshow.Admin_Request_Fragment"
+        android:label="Admin Request Panel"
+        tools:layout="@layout/admin_requests_fragment" />
+
+    <action
+        android:id="@+id/action_nav_home_to_fragmentA"
+        app:destination="@id/fragmentA" />
+
+    <action
+        android:id="@+id/action_nav_home_to_fragmentB"
+        app:destination="@id/fragmentB" />
+
+    <action
+        android:id="@+id/action_nav_adminlogin_to_adminreq"
+        app:destination="@id/admin_requests_fragment" />
+
+
+
+</navigation>
